@@ -33,6 +33,6 @@ jobs:
         run: |
           git config --global user.email "github-actions@github.com"
           git config --global user.name "GitHub Actions"
-          git add ppvland_playlist.m3u || echo "⚠️ No M3U file found!"
+          git add ppvs_playlist.m3u || echo "⚠️ No M3U file found!"
           git commit -m "Auto-update M3U playlist" || exit 0
           git push https://x-access-token:${{ secrets.MY_GITHUB_TOKEN }}@github.com/${{ github.repository }}.git main
